@@ -3,7 +3,7 @@
   "name": "com.calibrd/agent",
   "title": "Calibrd Agent",
   "description": "Would you make the shortlist? Score a job against your CV: fit, gaps, ATS score, likely questions.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://www.calibrd.com/agent",
   "repository": {
     "url": "https://github.com/Calibrd/calibrd-agent",

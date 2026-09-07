@@ -1,6 +1,6 @@
 {
   "name": "calibrd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calibrd Agent: would you make the shortlist? Score a job posting against your CV, get the full report, review your CV and draft a cover letter on your Calibrd account.",
   "author": { "name": "Calibrd", "url": "https://www.calibrd.com" },
   "homepage": "https://www.calibrd.com/agent",
