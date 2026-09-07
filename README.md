@@ -1,6 +1,6 @@
 # Calibrd Agent
 
-Would you make the shortlist? Calibrd Agent lets Claude, ChatGPT, Grok and any MCP client run [Calibrd](https://www.calibrd.com) on your account: score a job posting against your CV, get the full report, review your CV and draft a cover letter.
+Will a hiring manager shortlist you for this role? [Calibrd](https://www.calibrd.com) scores one job posting against your CV and answers that before you spend an evening on the application. It shows where you fall short at your level, the questions each round will ask, how your CV lands with a recruiter and with an applicant tracking system, and it drafts the cover letter when you decide the job is worth it.
 
 This repository is the plugin manifest only. The server runs at `https://www.calibrd.com/mcp`.
 
