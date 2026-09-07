@@ -18,7 +18,7 @@ claude mcp add --transport http calibrd https://www.calibrd.com/mcp
 
 **Grok Build, Cursor, other MCP clients:** copy `.mcp.json` into your project, or install this plugin from the xAI marketplace.
 
-Connecting opens a Calibrd sign-in once. Reports are free, three a day. A pass removes the cap and unlocks every tool; payment is on calibrd.com, never in the chat.
+Give the tools a posting as text or as a link (public LinkedIn job pages, Greenhouse, Lever, Levels.fyi, careers pages). Connecting opens a Calibrd sign-in once. Reports are free, three a day. A pass removes the cap and unlocks every tool; payment is on calibrd.com, never in the chat.
 
 ## Tools
 

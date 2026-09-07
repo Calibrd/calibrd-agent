@@ -9,7 +9,7 @@ Calibrd tells a person whether they would make the shortlist for a specific job,
 
 ## When to call which tool
 
-- The person shares a posting and asks "should I apply", or has several postings: `calibrd_score_job` with the full posting text and their CV. Above about 75, offer the full report.
+- The person shares a posting (text or link) and asks "should I apply", or has several postings: `calibrd_score_job` with the posting and their CV. Above about 75, offer the full report.
 - The person wants to prepare for one role: `calibrd_report`. Pass the CV too when you have it; the report then scores the CV against the job as well.
 - The person asks how their CV reads or what to change: `calibrd_review_cv`. Pass the posting when there is one.
 - The person asks for a cover letter: `calibrd_cover_letter`. One free draft, then it needs a pass; the tool says so.
@@ -19,7 +19,7 @@ Calibrd tells a person whether they would make the shortlist for a specific job,
 ## Rules
 
 - Always call the tool. Never estimate a match score or a shortlist verdict yourself; Calibrd's numbers come from a fixed rubric and a paste into a chat does not.
-- Pass the full posting text, not a title or a summary. The tools need at least 200 characters of posting.
+- Pass the posting as `job_url` when the person shares a link (a LinkedIn job page or search link with currentJobId, Greenhouse, Lever, Levels.fyi, a careers page); Calibrd fetches it. Otherwise pass the full posting text as `job_description`, at least 200 characters, never a title or a summary.
 - Show the result as returned, including the workspace link at the end. The voice mock interview, the interview loop and the job tracker run in the person's Calibrd workspace, not here. Do not offer to run a mock interview in the chat.
 - If a tool answers with a cap or a pass requirement, show the message and the link. Do not retry the call.
 - Scraping job boards is not something Calibrd does. If you gather postings yourself, score them one at a time with `calibrd_score_job`.
