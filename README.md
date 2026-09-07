@@ -33,6 +33,26 @@ Give the tools a posting as text or as a link (public LinkedIn job pages, Greenh
 | `calibrd_status` | What you have on Calibrd | Free |
 | `calibrd_get_pass` | A checkout link for a pass | Free to ask |
 
+## Running it over stdio
+
+Most clients connect straight to `https://www.calibrd.com/mcp` and none of this
+is needed. `bridge.mjs` is here for the two cases that cannot: clients that
+speak only stdio, and directory scanners that need a process to start and
+introspect.
+
+```
+node ./bridge.mjs
+```
+
+No dependencies and no build step — it is one file on the Node standard
+library. It answers `initialize` and `tools/list` locally, so listing the tools
+needs no account and no network. Running one does: `tools/call` forwards to the
+hosted server with the bearer token in `CALIBRD_ACCESS_TOKEN`, and says so
+plainly when there isn't one. `CALIBRD_MCP_URL` overrides the endpoint.
+
+The tool catalogue in `bridge.mjs` mirrors the hosted server. If the server
+gains or changes a tool, update the file — nothing enforces that automatically.
+
 ## Your data
 
 Calibrd Agent runs inside your assistant. Your CV, the job description and the report pass through your assistant's provider (Anthropic, OpenAI or xAI) under their terms. Calibrd itself keeps none of it: reports and CVs are generated and returned, not stored.
