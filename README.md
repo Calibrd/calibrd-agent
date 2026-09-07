@@ -4,6 +4,8 @@ Would you make the shortlist? Calibrd Agent lets Claude, ChatGPT, Grok and any M
 
 This repository is the plugin manifest only. The server runs at `https://www.calibrd.com/mcp`.
 
+Listed on [Smithery](https://smithery.ai/servers/justinxcguo/calibrd-agent) and [Glama](https://glama.ai/mcp/servers/Calibrd/calibrd-agent), and in the official MCP registry as `com.calibrd/agent`.
+
 ## Install
 
 **Claude (claude.ai):** Settings → Connectors → Add custom connector → URL `https://www.calibrd.com/mcp`.
