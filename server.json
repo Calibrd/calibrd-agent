@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "websiteUrl": "https://www.calibrd.com/agent",
   "repository": {
-    "url": "https://github.com/calibrd/calibrd-agent",
+    "url": "https://github.com/Calibrd/calibrd-agent",
     "source": "github"
   },
   "remotes": [
