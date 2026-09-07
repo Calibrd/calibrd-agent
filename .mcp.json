@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "calibrd": {
+      "type": "http",
+      "url": "https://www.calibrd.com/mcp"
+    }
+  }
+}
