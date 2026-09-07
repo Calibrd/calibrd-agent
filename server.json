@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.calibrd/agent",
   "title": "Calibrd Agent",
-  "description": "Hiring-manager shortlist from inside your assistant. Paste a job; get fit, seniority gaps, ATS/CV scores, predicted questions. Works inside Claude and Grok (Custom connector). ChatGPT directory parked. CV/JD/report pass through the assistant provider; Calibrd doesn’t store.",
+  "description": "Would you make the shortlist? Score a job against your CV: fit, gaps, ATS score, likely questions.",
   "version": "1.0.0",
   "websiteUrl": "https://www.calibrd.com/agent",
   "repository": {
