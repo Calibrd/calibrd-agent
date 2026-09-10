@@ -20,6 +20,7 @@ Calibrd tells a person whether they would make the shortlist for a specific job,
 
 - Always call the tool. Never estimate a match score or a shortlist verdict yourself; Calibrd's numbers come from a fixed rubric and a paste into a chat does not.
 - Pass the posting as `job_url` when the person shares a link (a LinkedIn job page or search link with currentJobId, Greenhouse, Lever, Levels.fyi, a careers page); Calibrd fetches it. Otherwise pass the full posting text as `job_description`, at least 200 characters, never a title or a summary.
+- Every tool also returns structured JSON (`structuredContent`) under its declared output schema: the score as a number, gaps and questions as arrays, the tailored CV parsed and as text. Read numbers from there, never from the sentences. There is no id to fetch a result by later; keep the payload.
 - Show the result as returned, including the workspace link at the end. The voice mock interview, the interview loop and the job tracker run in the person's Calibrd workspace, not here. Do not offer to run a mock interview in the chat.
 - If a tool answers with a cap or a pass requirement, show the message and the link. Do not retry the call.
 - Scraping job boards is not something Calibrd does. If you gather postings yourself, score them one at a time with `calibrd_score_job`.
